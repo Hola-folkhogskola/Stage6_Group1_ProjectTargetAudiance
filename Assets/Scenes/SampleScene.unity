@@ -9970,10 +9970,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d817fda92a92b54d8150b85cc47fd4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  power: 3
+  power: 8
   maxspeed: 5
-  turnpower: 2
-  friction: 3
+  turnpower: 4
+  friction: 5
   curspeed: {x: 0, y: 0}
 --- !u!1 &1153650874
 GameObject:
@@ -10560,10 +10560,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b9bb6515ee2a804b98a8174b05efbe3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  power: 3
+  power: 8
   maxspeed: 5
-  turnpower: 2
-  friction: 3
+  turnpower: 4
+  friction: 5
   curspeed: {x: 0, y: 0}
 --- !u!1 &2116527096
 GameObject:
