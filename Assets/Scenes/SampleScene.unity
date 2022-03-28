@@ -9953,6 +9953,28 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
+--- !u!1 &1052108633 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6599863337388085871, guid: 9b8ba8d47ba22fd448773c6959dd3e71, type: 3}
+  m_PrefabInstance: {fileID: 6599863336734302088}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1052108634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1052108633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d817fda92a92b54d8150b85cc47fd4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  power: 3
+  maxspeed: 5
+  turnpower: 2
+  friction: 3
+  curspeed: {x: 0, y: 0}
 --- !u!1 &1153650874
 GameObject:
   m_ObjectHideFlags: 0
@@ -10521,6 +10543,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1979129759 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6506506506893879651, guid: eb9b34674204f0b409eea33085b538c0, type: 3}
+  m_PrefabInstance: {fileID: 6506506505291238314}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1979129760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1979129759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b9bb6515ee2a804b98a8174b05efbe3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  power: 3
+  maxspeed: 5
+  turnpower: 2
+  friction: 3
+  curspeed: {x: 0, y: 0}
 --- !u!1 &2116527096
 GameObject:
   m_ObjectHideFlags: 0
@@ -10662,7 +10706,9 @@ PrefabInstance:
       propertyPath: m_DefaultControlScheme
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6506506506893879653, guid: eb9b34674204f0b409eea33085b538c0, type: 3}
+    - {fileID: 6506506506893879652, guid: eb9b34674204f0b409eea33085b538c0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: eb9b34674204f0b409eea33085b538c0, type: 3}
 --- !u!1001 &6599863336734302088
 PrefabInstance:
@@ -10735,5 +10781,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: player1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6599863337388085862, guid: 9b8ba8d47ba22fd448773c6959dd3e71, type: 3}
+    - {fileID: 6599863337388085861, guid: 9b8ba8d47ba22fd448773c6959dd3e71, type: 3}
+    - {fileID: 6599863337388085860, guid: 9b8ba8d47ba22fd448773c6959dd3e71, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9b8ba8d47ba22fd448773c6959dd3e71, type: 3}
