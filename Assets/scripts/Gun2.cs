@@ -4,15 +4,30 @@ using UnityEngine;
 
 public class Gun2 : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public GameObject projectile;
+    public Transform shotpoint;
+    public Transform weapon;
+
+    private float timeBtwShots;
+    public float startTimeBtwShots;
+
     void Start()
     {
-        
+
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKey(KeyCode.K) && timeBtwShots <= 0)
+        {
+            Instantiate(projectile, shotpoint.position, weapon.rotation);
+            timeBtwShots = startTimeBtwShots;
+        }
+        else
+        {
+            timeBtwShots -= Time.deltaTime;
+        }
     }
+
+
 }

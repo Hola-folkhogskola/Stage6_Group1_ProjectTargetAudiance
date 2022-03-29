@@ -3,16 +3,40 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Bullet2 : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
+{ 
+    public float mySpeed;
+    public float lifeTime;
+    public float gap;
+    public LayerMask isSolid;
+
+    public GameObject destroyEffect;
+
+    private void Start()
     {
-        
+        Invoke("DestroyProjectile", lifeTime);
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        transform.Translate(Vector2.up * mySpeed * Time.deltaTime);
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+
+        if (collision.gameObject.tag == "Player1")
+        {
+            print("projectile was fired");
+            DestroyProjectile();
+        }
+    }
+
+    void DestroyProjectile()
+    {
+        //Sparkle effect 
+        Instantiate(destroyEffect, transform.position, Quaternion.identity);
+
+        //Destroy gameobject
+        Destroy(gameObject);
     }
 }
