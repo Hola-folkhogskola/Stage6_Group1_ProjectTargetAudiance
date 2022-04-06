@@ -95,9 +95,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f372560374b6e85498cd6bc0aef8b0c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mySpeed: 20
-  lifeTime: 0.7
-  gap: 0.3
+  mySpeed: 45
+  lifeTime: 1.6
+  gap: 1
   isSolid:
     serializedVersion: 2
     m_Bits: 64
