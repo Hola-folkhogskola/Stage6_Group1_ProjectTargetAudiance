@@ -27,6 +27,9 @@ public class Bullet2 : MonoBehaviour
         if (collision.gameObject.tag == "Player1")
         {
             print("projectile was fired");
+            
+            
+            Destroy(gameObject);
             DestroyProjectile();
         }
     }

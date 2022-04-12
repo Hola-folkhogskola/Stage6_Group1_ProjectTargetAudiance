@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet1 : MonoBehaviour
+public class Bullet : MonoBehaviour
 { 
     public float mySpeed;
     public float lifeTime;
@@ -27,6 +27,9 @@ public class Bullet1 : MonoBehaviour
         if (collision.gameObject.tag == "Player2")
         {
             print("projectile was fired");
+            
+            
+            Destroy(gameObject);
             DestroyProjectile();
         }
     }
